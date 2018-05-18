@@ -1,27 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <fragment
-        android:id="@+id/fragment"
+        android:id="@+id/first_fragment"
         android:name="io.github.lucasduete.pdm_fragment.FistFragment"
         android:layout_width="match_parent"
-        android:layout_height="37dp"
-        tools:layout="@layout/fragment_fist"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="70dp"></fragment>
+        android:layout_height="wrap_content"
+        tools:layout="@layout/fragment_fist"></fragment>
 
     <fragment
-        android:id="@id/fragment"
+        android:id="@+id/second_fragment"
         android:name="io.github.lucasduete.pdm_fragment.SecondFragment"
         android:layout_width="match_parent"
-        android:layout_height="94dp"
-        tools:layout="@layout/fragment_second"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="246dp"></fragment>
+        android:layout_height="wrap_content"
+        tools:layout="@layout/fragment_second"></fragment>
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>
